@@ -1,6 +1,7 @@
 //! Cargo-UF2 CLI tool.
 
 mod convert;
+mod verify;
 
 use clap::Parser;
 
@@ -15,6 +16,8 @@ struct Cli {
 enum Subcommand {
     /// Convert between binary and UF2 formats.
     Convert(convert::Cmd),
+    /// Verify a UF2 file for validity.
+    Verify(verify::Cmd),
 }
 
 fn main() -> anyhow::Result<()> {
@@ -22,5 +25,6 @@ fn main() -> anyhow::Result<()> {
 
     match args.subcommand {
         Subcommand::Convert(cmd) => cmd.run(),
+        Subcommand::Verify(cmd) => cmd.run(),
     }
 }

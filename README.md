@@ -9,6 +9,7 @@ This crate utilizes the [uftwo crate](https://crates.io/crates/uftwo).
 ## Features
 * Convert Bin to UF2
 * Convert UF2 to Bin
+* Verify UF2 files
 
 ## Installation
 
@@ -51,6 +52,15 @@ cargo uf2 convert input.bin output.uf2 \
 - `-p, --page-size <SIZE>`: Page size for target device (default: auto, fallback: 256)
 - `-s, --semver <VERSION>`: Semantic version string
 - `-d, --description <TEXT>`: Description string for firmware
+
+### Verify
+
+Verify a UF2 file for validity.
+
+```bash
+# Verify a UF2 file
+cargo uf2 verify firmware.uf2
+```
 
 ## License
 
