@@ -1,5 +1,7 @@
 # cargo-uf2
 
+[![crates.io](https://img.shields.io/crates/v/cargo-uf2.svg)](https://crates.io/crates/cargo-uf2)
+
 A cargo subcommand for [UF2 file](https://github.com/microsoft/uf2) operations. UF2 (USB Flashing Format) is a file format used for flashing microcontrollers over USB, popularized by devices like the Raspberry Pi Pico.
 
 This crate utilizes the [uftwo crate](https://crates.io/crates/uftwo).
@@ -10,7 +12,7 @@ This crate utilizes the [uftwo crate](https://crates.io/crates/uftwo).
 
 ## Installation
 
-Install from crates.io:
+Install from crates.io: [cargo-uf2](https://crates.io/crates/cargo-uf2)
 ```bash
 cargo install cargo-uf2
 ```
